@@ -1,1 +1,3 @@
 # portfolio_guntankoba
+がんたんのポートフォリオを作る
+はじめてのtypescript
