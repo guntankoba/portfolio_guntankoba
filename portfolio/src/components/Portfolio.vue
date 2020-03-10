@@ -5,16 +5,20 @@
     おはようございます。<br>
     がんたんの色々が入ってるサイトです。<br>
     適当に見ていってください。
+
+    <profile></profile>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import HeaderBar from './HeaderBar.vue';
+import Profile from './Profile.vue';
 
 @Component({
   components: {
-    HeaderBar
+    HeaderBar,
+    Profile,
   },
 })
 export default class Portfolio extends Vue {
@@ -24,6 +28,10 @@ export default class Portfolio extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.portfolio {
+  background: linear-gradient(#3642AF, #EC843E);
+}
+
 h3 {
   margin: 40px 0 0;
 }
