@@ -7,6 +7,8 @@
     適当に見ていってください。
 
     <profile></profile>
+    <work></work>
+    <contact></contact>
   </div>
 </template>
 
@@ -14,11 +16,14 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import HeaderBar from './HeaderBar.vue';
 import Profile from './Profile.vue';
-
+import Work from './Work.vue';
+import Contact from './Contact.vue';
 @Component({
   components: {
     HeaderBar,
     Profile,
+    Work,
+    Contact,
   },
 })
 export default class Portfolio extends Vue {
@@ -29,7 +34,7 @@ export default class Portfolio extends Vue {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .portfolio {
-  background: linear-gradient(#3642AF, #EC843E);
+ 
 }
 
 h3 {

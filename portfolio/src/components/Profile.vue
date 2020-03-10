@@ -2,14 +2,14 @@
   <div class="profile">
     <img class="icon" alt="Icon" src="../assets/tori.png">
     <div class="item">
-      Name : がんたん
+      <h2>Name : がんたん</h2>
       面白いものが好きでOY旅団というゲームサークルで
-      同人ゲーム製作に務める。
-      リンク（OY旅団）
-      担当はイラスト（2Dillust, dot）、UI、雑務
+      同人ゲーム製作に務める。<br>
+      リンク（OY旅団）<br>
+      担当はイラスト（2Dillust, dot）、UI、雑務<br>
 
-      普段は普通の会社で企画を担当（デザインでも開発でもないんだ・・・）
-      好きな言語はPython
+      普段は普通の会社で企画を担当（デザインでも開発でもないんだ・・・）<br>
+      好きな言語はPython<br>
       その他使える技術：javascript, Vue.js, AWS, tensorflow, chainer
                                       photoshop, illustrator...
 
@@ -31,18 +31,18 @@ export default class Profile extends Vue {
 .profile {
   display: flex;
   justify-content: center;
-  max-width: 80%;
+
   padding: 50px;
 }
 
 .icon {
   border-radius: 50%;
-  width: 20%;
-  height: 20%
+  width: 15%;
+  height: 15%
 }
 
 .item {
-  max-width: 40%
+  max-width: 35%
 }
 
 h3 {
