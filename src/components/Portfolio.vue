@@ -5,7 +5,7 @@
       <div class='top'>
         <div class='top-items'>
           <h1> guntankoba</h1>
-          がんたんの色々が入ってるサイトです。<br>
+          がんたんの色々が入ってるサイトです。
           適当に見ていってください。
 
         </div>
