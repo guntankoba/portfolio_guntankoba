@@ -30,15 +30,18 @@ export default class Profile extends Vue {
 
 .profile {
   display: flex;
-  justify-content: center;
-
+  justify-content: space-around;
+  align-items: center;
   padding: 50px;
+  height: 50vh;
+  background-color: cornflowerblue;
 }
 
 .icon {
-  border-radius: 50%;
-  width: 15%;
-  height: 15%
+  width: 30%;
+  height: 30%;
+  object-fit: contain;
+  margin: 50px;
 }
 
 .item {

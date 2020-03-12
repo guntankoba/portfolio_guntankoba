@@ -25,9 +25,10 @@ export default class Work extends Vue {
 
 .work {
   display: flex;
-  justify-content: center;
-
+  justify-content: space-around;
+  align-items: center;
   padding: 50px;
+  height: 50vh;
 }
 
 .item {
