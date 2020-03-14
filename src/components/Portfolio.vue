@@ -49,7 +49,7 @@ export default class Portfolio extends Vue {
   align-items: center;
   justify-content: center;
   padding: 100px;
-  height: 80vh;
+  height: 100vh;
   background-color: teal;
 }
 h1 { 

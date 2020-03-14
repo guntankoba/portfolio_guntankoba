@@ -1,21 +1,25 @@
 <template>
   <div class="work">
-    <div class="item">
-      <h2>Noisers</h2>
+    <div class="work--head">
+      Portforio
     </div>
-    <div class="item">
-      <h2>Noisers</h2>
-    </div>
-    <div class="item">
-      <h2>Noisers</h2>
+    <div class="work--body">    
+      <work-item></work-item>
+      <work-item></work-item>
+      <work-item></work-item>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
+import WorkItem from './WorkItem.vue';
 
-@Component
+@Component({
+  components: {
+    WorkItem,
+  },
+})
 export default class Work extends Vue {
 }
 </script>
@@ -24,16 +28,27 @@ export default class Work extends Vue {
 <style scoped>
 
 .work {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   padding: 50px;
   height: 50vh;
 }
 
+.work--head {
+  padding : 20px;
+  font-size: 50px;
+}
+
+.work--body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .item {
   max-width: 40%;
-  padding: 30px;
+  min-width: 20%;
+  height: 30vh;
+  padding: 20px;
+  background-color:dimgray;
 }
 
 h3 {
