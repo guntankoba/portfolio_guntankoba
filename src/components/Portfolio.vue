@@ -7,7 +7,6 @@
           <h1 id="top"> guntankoba</h1>
           がんたんの色々が入ってるサイトです。
           適当に見ていってください。
-
         </div>
       </div>
       <profile></profile>

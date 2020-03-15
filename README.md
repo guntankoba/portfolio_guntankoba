@@ -1,5 +1,9 @@
 # portfolio
-github action test
+guntankobaの勉強がてら色々作るものを公開するページ \
+
+## Architeqture
+- Vue.js + typescript
+
 ## Project setup
 ```
 npm install

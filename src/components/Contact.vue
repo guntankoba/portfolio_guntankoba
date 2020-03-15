@@ -26,7 +26,8 @@ export default class Contact extends Vue {
 <style scoped>
 
 .contact {
-  height: 50vh;
+  background-color: darkslategrey;
+  height: 90vh;
   padding: 50px;
 }
 
