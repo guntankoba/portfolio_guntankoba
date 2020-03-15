@@ -1,10 +1,10 @@
 <template>
   <header class="header">
     <ul >
-      <li><button v-scroll-to="'#top'">Top</button></li>
-      <li>Profile</li>
-      <li>Work</li>
-      <li>Contact</li>
+      <li><button v-scroll-to="'.top'">Top</button></li>
+      <li><button v-scroll-to="'.profile'">Profile</button></li>
+      <li><button v-scroll-to="'.work'">Work</button></li>
+      <li><button v-scroll-to="'.contact'">Contact</button></li>
     </ul>
   </header>
 </template>

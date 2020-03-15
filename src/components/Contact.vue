@@ -4,7 +4,12 @@
       Contact
     </div>
     <div class="contact--body">
-      <a href="https://twitter.com/guntankoba"><font-awesome-icon :icon="['fab', 'twitter-square']" /></a>
+      <div class="contact--item">
+        <a href="https://twitter.com/guntankoba"><font-awesome-icon :icon="['fab', 'twitter-square']" /></a>
+      </div>
+      <div class="contact--item">
+        <a href="https://github.com/guntankoba"><font-awesome-icon :icon="['fab', 'github-square']" /></a>
+      </div>
     </div>
   </div>
 </template>
@@ -31,11 +36,13 @@ export default class Contact extends Vue {
 }
 .contact--body {
   display: flex;
-  justify-content: space-around;
-
+  justify-content: center;
+  padding: 30px;
   font-size: 300%;
 }
-
+.contact--item {
+  padding: 30px;
+}
 
 .icon {
   border-radius: 50%;

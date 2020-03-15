@@ -5,11 +5,10 @@ import router from './router';
 //font-awesome
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faDiscord } from '@fortawesome/free-brands-svg-icons';
-import { faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
+import { faDiscord,faTwitterSquare, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 
-library.add(faDiscord)
-library.add(faTwitterSquare)
+
+library.add(faDiscord, faTwitterSquare, faGithubSquare)
 Vue.config.productionTip = false;
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
