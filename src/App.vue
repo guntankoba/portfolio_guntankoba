@@ -6,6 +6,9 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+
+
+
 import Portfolio from './components/Portfolio.vue';
 @Component({
   components: {

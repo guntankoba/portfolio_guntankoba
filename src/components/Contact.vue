@@ -1,7 +1,10 @@
 <template>
   <div class="contact">
-    <div class="item">
-      Please Contact Me !!!
+    <div class="contact--title">
+      Contact
+    </div>
+    <div class="contact--body">
+      <a href="https://twitter.com/guntankoba"><font-awesome-icon :icon="['fab', 'twitter-square']" /></a>
     </div>
   </div>
 </template>
@@ -18,11 +21,21 @@ export default class Contact extends Vue {
 <style scoped>
 
 .contact {
-  display: flex;
-  justify-content: center;
-
+  height: 50vh;
   padding: 50px;
 }
+
+.contact--title {
+  padding : 20px;
+  font-size: 50px;
+}
+.contact--body {
+  display: flex;
+  justify-content: space-around;
+
+  font-size: 300%;
+}
+
 
 .icon {
   border-radius: 50%;
@@ -30,9 +43,6 @@ export default class Contact extends Vue {
   height: 15%
 }
 
-.item {
-  max-width: 35%
-}
 
 h3 {
   margin: 40px 0 0;

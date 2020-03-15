@@ -30,6 +30,7 @@ export default class Work extends Vue {
 .work {
   padding: 50px;
   height: 50vh;
+  background-color: aquamarine;
 }
 
 .work--head {

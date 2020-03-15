@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <ul >
-      <li>Top</li>
+      <li><button v-scroll-to="'#top'">Top</button></li>
       <li>Profile</li>
       <li>Work</li>
       <li>Contact</li>
