@@ -15,6 +15,8 @@ import Portfolio from './components/Portfolio.vue';
     Portfolio,
   },
 })
+
+
 export default class App extends Vue {}
 </script>
 
