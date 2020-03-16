@@ -53,7 +53,7 @@ export default class Portfolio extends Vue {
 }
 h1 { 
   padding: 50px;
-  font-size: 120px;
+  font-size: 10vw;
 }
 
 h3 {

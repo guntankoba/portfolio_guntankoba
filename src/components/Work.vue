@@ -40,8 +40,10 @@ export default class Work extends Vue {
 
 .work--body {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
+  
 }
 
 .item {

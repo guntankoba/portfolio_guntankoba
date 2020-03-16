@@ -30,7 +30,7 @@ export default class WorkItem extends Vue {
     width: 30%
   }
   .work--title {
-    font-size: 300%;
+    font-size: 250%;
   }
   .work--body {
     

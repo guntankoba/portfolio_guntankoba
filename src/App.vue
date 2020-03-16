@@ -21,6 +21,7 @@ export default class App extends Vue {}
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -31,5 +32,6 @@ export default class App extends Vue {}
 
 body{
 	margin: 0;
+  font-size: 1.6em;
 }
 </style>
