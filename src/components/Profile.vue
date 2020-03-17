@@ -3,14 +3,15 @@
     <img class="icon" alt="Icon" src="../assets/tori.png">
     <div class="item">
       <h2>Name : がんたん</h2>
-      面白いものが好きでOY旅団というゲームサークルで
+      面白いもの,新しいもの,独自性のあるものが好きでOY旅団というゲームサークルで
       同人ゲーム製作に務める。<br>
       リンク（OY旅団）<br>
-      担当はイラスト（2Dillust, dot）、UI、雑務<br>
+      担当はイラスト（2Dillust, dot）、UI<br>
 
-      普段は普通の会社で企画を担当（デザインでも開発でもないんだ・・・）<br>
+      普段は普通の会社員。
+      開発希望で入ったのになんやかんやで営業や企画も担当してる<br>
       好きな言語はPython<br>
-      その他使える技術：javascript, Vue.js, AWS, tensorflow, chainer
+      その他使える、好きな技術：javascript, Vue.js, AWS, tensorflow, chainer
                                       photoshop, illustrator...
 
     </div>
@@ -34,7 +35,7 @@ export default class Profile extends Vue {
   align-items: center;
   padding: 50px;
   height: 50vh;
-  background-color: cornflowerblue;
+
 }
 
 .icon {

@@ -7,9 +7,12 @@
           <div id='top'>
             <h1 > guntankoba</h1>
             がんたんの色々が入ってるサイトです。
-            適当に見ていってください。
+            ちまちま改修しながら作ってるのでデザインなどもまだです
+            適当に見ていってください。<br>
+
+            
             <div v-scroll="handleScroll" class='scroll-test'>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+              <p>スクロール位置で文字拡大するscroll-directive</p>
             </div>
           </div>
         </div>
@@ -53,7 +56,7 @@ export default class Portfolio extends Vue {
         console.log(window.scrollY)
         el.setAttribute(
           'style',
-          'font-size: 100px'
+          'font-size: 50px'
         )
       }
       return window.scrollY > 1000
@@ -73,7 +76,16 @@ export default class Portfolio extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.portfolio {
+.portfolio {  
+    
+  background: linear-gradient(182deg, #7a74d0, #e3a069, #92e4e1, #d79ce4, #363a7b);
+  background-size: 1000% 1000%;
+
+  -webkit-animation: Sunset 24s ease infinite;
+  -moz-animation: Sunset 24s ease infinite;
+  animation: Sunset 24s ease infinite;
+
+ 
  
 }
 .scroll-test {
@@ -87,7 +99,7 @@ export default class Portfolio extends Vue {
   justify-content: center;
   padding: 100px;
   height: 100vh;
-  background-color: teal;
+  
 }
 h1 { 
   padding: 50px;
@@ -107,5 +119,21 @@ li {
 }
 a {
   color: #42b983;
+}
+
+@-webkit-keyframes Sunset {
+    0%{background-position:47% 0%}
+    50%{background-position:54% 100%}
+    100%{background-position:47% 0%}
+}
+@-moz-keyframes Sunset {
+    0%{background-position:47% 0%}
+    50%{background-position:54% 100%}
+    100%{background-position:47% 0%}
+}
+@keyframes Sunset {
+    0%{background-position:47% 0%}
+    50%{background-position:54% 100%}
+    100%{background-position:47% 0%}
 }
 </style>

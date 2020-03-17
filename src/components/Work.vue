@@ -1,8 +1,13 @@
 <template>
   <div class="work">
     <div class="work--head">
-      Portforio
+      Portforio<br>
     </div>
+    <h2>
+      修正中なのでとりあえずここ見てください<br>
+      <a href="https://www.oy-brigade.work/">OY旅団</a>
+    </h2>
+
     <div class="work--body">    
       <work-item></work-item>
       <work-item></work-item>
@@ -30,7 +35,7 @@ export default class Work extends Vue {
 .work {
   padding: 50px;
   height: 50vh;
-  background-color: aquamarine;
+  
 }
 
 .work--head {
@@ -51,7 +56,7 @@ export default class Work extends Vue {
   min-width: 20%;
   height: 30vh;
   padding: 20px;
-  background-color:dimgray;
+  
 }
 
 h3 {
