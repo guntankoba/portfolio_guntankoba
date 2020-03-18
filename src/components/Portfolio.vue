@@ -51,9 +51,6 @@ export default class Portfolio extends Vue {
   handleScroll(evt: Event, el: any) {
 
     if (window.scrollY > 300) {
-        console.log('over 50');
-        console.log(el.style.font)
-        console.log(window.scrollY)
         el.setAttribute(
           'style',
           'font-size: 50px'
@@ -62,15 +59,6 @@ export default class Portfolio extends Vue {
       return window.scrollY > 1000
   }
 
-  // handleScroll(): function (evt, el) {
-  //     if (window.scrollY > 50) {
-  //       el.setAttribute(
-  //         'style',
-  //         'opacity: 1; transform: translate3d(0, -10px, 0)'
-  //       )
-  //     }
-  //     return window.scrollY > 100
-  //   }
 }
 </script>
 
