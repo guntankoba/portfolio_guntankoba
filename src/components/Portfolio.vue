@@ -6,14 +6,9 @@
         <div class='top-items'>
           <div id='top'>
             <h1 > guntankoba</h1>
-            がんたんの色々が入ってるサイトです。
-            ちまちま改修しながら作ってるのでデザインなどもまだです
+            がんたんの色々が入ってるサイトです。<br>
+            ちまちま改修しながら作ってるのでデザインなどもまだです<br>
             適当に見ていってください。<br>
-
-            
-            <div v-scroll="handleScroll" class='scroll-test'>
-              <p>スクロール位置で文字拡大するscroll-directive</p>
-            </div>
           </div>
         </div>
       </div>
@@ -47,7 +42,7 @@ import scroll from '../scroll';
 })
 export default class Portfolio extends Vue {
   @Prop() private msg!: string;
-  el = '#app'
+  
   handleScroll(evt: Event, el: any) {
 
     if (window.scrollY > 300) {
@@ -64,6 +59,12 @@ export default class Portfolio extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+@media screen and (max-width: 480px) {
+  .top{
+    height: 50vh;
+  }
+}
+
 .portfolio {  
     
   background: linear-gradient(182deg, #7a74d0, #e3a069, #92e4e1, #d79ce4, #363a7b);
@@ -71,9 +72,7 @@ export default class Portfolio extends Vue {
 
   -webkit-animation: Sunset 24s ease infinite;
   -moz-animation: Sunset 24s ease infinite;
-  animation: Sunset 24s ease infinite;
-
- 
+  animation: Sunset 24s ease infinite; 
  
 }
 .scroll-test {
@@ -85,7 +84,7 @@ export default class Portfolio extends Vue {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px;
+  padding: 10%;
   height: 100vh;
   
 }
@@ -107,6 +106,12 @@ li {
 }
 a {
   color: #42b983;
+}
+
+@media screen and(max-width: 480px) {
+  .top {
+    padding: 0;
+  }
 }
 
 @-webkit-keyframes Sunset {

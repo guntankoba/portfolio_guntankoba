@@ -35,25 +35,33 @@ export default class Work extends Vue {
 .work {
   padding: 50px;
   height: 50vh;
-  
 }
 
 .work--head {
   padding : 20px;
   font-size: 50px;
+  
 }
 
 .work--body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  
+  align-items: center; 
 }
-@media screen and(max-width: 480px) {
+@media screen and (max-width: 480px) {
+  .work {
+    min-height: 100vh;
+  }
   .work--body {
     flex-direction: column;
   }    
+  .item {
+    max-width: 90%;
+    min-width: 20%;
+    height: 30vh;
+    padding: 20px;
+  }
 }
 
 .item {
