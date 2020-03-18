@@ -35,8 +35,13 @@ export default class Profile extends Vue {
   align-items: center;
   padding: 50px;
   height: 50vh;
-
 }
+@media screen and(max-width: 480px) {
+  .profile {
+    flex-direction: column;
+  }    
+}
+
 
 .icon {
   width: 30%;
@@ -61,6 +66,6 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #42b983;
+  color: #132044;
 }
 </style>

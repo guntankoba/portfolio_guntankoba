@@ -50,6 +50,11 @@ export default class Work extends Vue {
   align-items: center;
   
 }
+@media screen and(max-width: 480px) {
+  .work--body {
+    flex-direction: column;
+  }    
+}
 
 .item {
   max-width: 40%;
@@ -71,6 +76,6 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #42b983;
+  color: #132044;
 }
 </style>
