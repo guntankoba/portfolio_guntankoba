@@ -1,5 +1,5 @@
 <template>
-  <header class="header" v-scroll="handleScroll">
+  <header class="header" v-scroll="handleScroll" v-show="overScroll">
     <ul id="header-bar">
       <li class="button" v-scroll-to="'.top'">Top</class="button"></li>
       <li class="button" v-scroll-to="'.profile'">Profile</li>
@@ -19,19 +19,18 @@ import scroll from '../scroll';
   },
 })
 export default class HeaderBar extends Vue {
-  el = '#header-bar'
+  el = '#app'
   positionScroll : any = window.scrollY;
-  
+  overScroll : boolean = true;
   handleScroll(evt: Event, el: any) {
-    console.log(window.scrollY)
     this.positionScroll = window.scrollY;
     if (window.scrollY > 400) {
-      console.log('change-header')
-      el.setAttribute(
-          'style',
-          'background-color: black'
-        )
+      this.overScroll = false;
     }
+    else {
+      this.overScroll = true;
+    }
+
   }
 
 }
