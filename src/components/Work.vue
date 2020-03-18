@@ -4,7 +4,7 @@
       Portforio<br>
     </div>
     <h2>
-      修正中なのでとりあえずここ見てください<br>
+      ・・・工事中・・・<br>とりあえずここ見てください<br>
       <a href="https://www.oy-brigade.work/">OY旅団</a>
     </h2>
 
@@ -33,14 +33,12 @@ export default class Work extends Vue {
 <style scoped>
 
 .work {
-  padding: 50px;
-  height: 50vh;
+  height: auto;
 }
 
 .work--head {
-  padding : 20px;
+  margin : 5%;
   font-size: 50px;
-  
 }
 
 .work--body {
@@ -49,6 +47,13 @@ export default class Work extends Vue {
   justify-content: space-between;
   align-items: center; 
 }
+
+.item {
+  max-width: 90%;
+  min-width: 20%;
+  height: auto;
+
+}
 @media screen and (max-width: 480px) {
   .work {
     min-height: 100vh;
@@ -56,21 +61,9 @@ export default class Work extends Vue {
   .work--body {
     flex-direction: column;
   }    
-  .item {
-    max-width: 90%;
-    min-width: 20%;
-    height: 30vh;
-    padding: 20px;
-  }
+
 }
 
-.item {
-  max-width: 40%;
-  min-width: 20%;
-  height: 30vh;
-  padding: 20px;
-  
-}
 
 h3 {
   margin: 40px 0 0;
@@ -85,5 +78,31 @@ li {
 }
 a {
   color: #132044;
+}
+@media screen and (min-width: 1280px) {
+
+
+  .work--head {
+    padding : 20px;
+    font-size: 50px;
+    
+  }
+
+  .work--body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    margin: 5%
+  }
+  
+  .item {
+    max-width: 40%;
+    min-width: 20%;
+    height: 30vh;
+    padding: 20px;
+    
+  }
 }
 </style>

@@ -1,9 +1,7 @@
 <template>
-  <div class="profile">
-    <div class="item">
-        <img class="item" sizes="(max-width: 480px) 90vw" alt="Icon" src="../assets/tori.png">
-    </div>
-    <div class="item">
+  <div id="profile">
+    <img class="profile--item" sizes="(max-width: 480px) 90vw" alt="Icon" src="../assets/tori.png">
+    <div class="profile--item">
       <h2>Name : がんたん</h2>
       面白いもの,新しいもの,独自性のあるものが好きでOY旅団というゲームサークルで
       同人ゲーム製作に務める。<br>
@@ -34,33 +32,33 @@ export default class Profile extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-
-@media screen and (max-width: 480px) {
-  .profile {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: auto;
-  }
-
-  .item {
-    max-width: 90%;
-    flex-direction: column;
-  }
-  img {
-    max-width: 90%;
-  }
+#profile {
+  display: flex;
+  flex-direction: column;;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+}
+.profile--item {
+  margin: 10%
+}
+img {
+  max-width: 90%;
 }
 
 
 @media screen and (min-width: 1280px) {
-  .profile {
+  #profile {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     height: 50vh;
   }
+  img {
+    max-height: 90%;
+  } 
+
 
   h3 {
     margin: 40px 0 0;

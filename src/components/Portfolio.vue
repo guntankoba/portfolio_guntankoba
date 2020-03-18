@@ -4,12 +4,10 @@
     <div class='body'>
       <div class='top'>
         <div class='top-items'>
-          <div id='top'>
-            <h1 > guntankoba</h1>
-            がんたんの色々が入ってるサイトです。<br>
-            ちまちま改修しながら作ってるのでデザインなどもまだです<br>
-            適当に見ていってください。<br>
-          </div>
+          <h1 > guntankoba</h1>
+          がんたんの色々が入ってるサイトです。<br>
+          ちまちま改修しながら作ってるのでデザインなどもまだです<br>
+          適当に見ていってください。<br>
         </div>
       </div>
       <profile></profile>
@@ -59,12 +57,6 @@ export default class Portfolio extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-@media screen and (max-width: 480px) {
-  .top{
-    height: 50vh;
-  }
-}
-
 .portfolio {  
     
   background: linear-gradient(182deg, #7a74d0, #e3a069, #92e4e1, #d79ce4, #363a7b);
@@ -75,11 +67,11 @@ export default class Portfolio extends Vue {
   animation: Sunset 24s ease infinite; 
  
 }
+
 .scroll-test {
   transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
 }
-.body {
-}
+
 .top {
   display: flex;
   align-items: center;
@@ -88,9 +80,13 @@ export default class Portfolio extends Vue {
   height: 100vh;
   
 }
+
+.top--item {
+
+}
 h1 { 
-  padding: 50px;
-  font-size: 10vw;
+  font-size: 15vw;
+  
 }
 
 h3 {
@@ -108,11 +104,21 @@ a {
   color: #42b983;
 }
 
-@media screen and(max-width: 480px) {
-  .top {
-    padding: 0;
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width: 1280px) {
+   .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  } 
+  h1 { 
+    font-size: 10vw;
   }
 }
+
 
 @-webkit-keyframes Sunset {
     0%{background-position:47% 0%}
