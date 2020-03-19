@@ -1,6 +1,6 @@
 <template>
   <div id="profile">
-    <img class="profile--item" sizes="(max-width: 480px) 90vw" alt="Icon" src="../assets/tori.png">
+    <img class="profile--item" sizes="(max-width: 480px) 90vw" alt="Icon" src="../assets/guntankobaicon.png">
     <div class="profile--item">
       <h2>Name : がんたん</h2>
       面白いもの,新しいもの,独自性のあるものが好きでOY旅団というゲームサークルで
@@ -44,6 +44,7 @@ export default class Profile extends Vue {
 }
 img {
   max-width: 90%;
+  border-radius: 50%;
 }
 
 
@@ -57,6 +58,7 @@ img {
   }
   img {
     max-height: 90%;
+    border-radius: 50%;
   } 
 
 
