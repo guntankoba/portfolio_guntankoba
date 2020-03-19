@@ -2,7 +2,7 @@
   <header class="header" v-scroll="handleScroll" v-show="overScroll">
     <ul id="header-bar">
       <li class="button" v-scroll-to="'.top'">Top</class="button"></li>
-      <li class="button" v-scroll-to="'.profile'">Profile</li>
+      <li class="button" v-scroll-to="'#profile'">Profile</li>
       <li class="button"  v-scroll-to="'.work'">Work</li>
       <li class="button" v-scroll-to="'.contact'">Contact</li>
       <li class="button" >{{ positionScroll }}</li>
