@@ -1,13 +1,16 @@
 <template>
-  <header class="header" v-scroll="handleScroll" v-show="overScroll">
-    <ul id="header-bar">
-      <li class="button" v-scroll-to="'.top'">Top</class="button"></li>
-      <li class="button" v-scroll-to="'#profile'">Profile</li>
-      <li class="button"  v-scroll-to="'.work'">Work</li>
-      <li class="button" v-scroll-to="'.contact'">Contact</li>
-      <li class="button" >{{ positionScroll }}</li>
-    </ul>
-  </header>
+  <transition name="fade">
+    <header class="header" v-scroll="handleScroll" v-show="overScroll">
+      <ul id="header-bar">
+        <li class="button" v-scroll-to="'.top'">Top</class="button"></li>
+        <li class="button" v-scroll-to="'#profile'">Profile</li>
+        <li class="button"  v-scroll-to="'.work'">Work</li>
+        <li class="button" v-scroll-to="'.contact'">Contact</li>
+        <li class="button" >{{ positionScroll }}</li>
+      </ul>
+    </header>
+  </transition>
+  
 </template>
 
 <script lang="ts">
@@ -20,16 +23,24 @@ import scroll from '../scroll';
 })
 export default class HeaderBar extends Vue {
   el = '#app'
+  
   positionScroll : any = window.scrollY;
   overScroll : boolean = true;
   handleScroll(evt: Event, el: any) {
-    this.positionScroll = window.scrollY;
-    if (window.scrollY > 400) {
-      this.overScroll = false;
+    if (window.scrollY < this.positionScroll) {
+      this.overScroll = true;
+      this.positionScroll = window.scrollY;
     }
     else {
-      this.overScroll = true;
+      this.positionScroll = window.scrollY;
+      if (window.scrollY > 400) {
+        this.overScroll = false;
+      }
+      else {
+        this.overScroll = true;
+      }
     }
+    
 
   }
 
@@ -40,6 +51,7 @@ export default class HeaderBar extends Vue {
 <style scoped>
 #header-bar {
   background-color: rgb(29, 29, 29);
+  transition: 1s;
 }
 
 .header {
@@ -82,4 +94,29 @@ li {
 a {
   color: #42b983;
 }
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 1s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+/* top */
+.top-enter {
+  transition: all 1s ;
+  
+}
+.top-enter-active {
+  transform: translateY(200vh);
+}
+
+.top-leave-to {
+  transform:  translateY(-100px);
+}
+.top-leave-active {
+  transition-duration: 2s;
+}
+/* end */
+
 </style>

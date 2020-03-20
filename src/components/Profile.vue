@@ -52,7 +52,7 @@ img {
   #profile {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:center;
     align-items: center;
     height: 50vh;
   }
