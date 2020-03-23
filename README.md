@@ -1,6 +1,12 @@
 # portfolio
-guntankobaの勉強がてら色々作るものを公開するページ \
+[guntankobaの勉強がてら色々作るものを公開するページ](https://guntankoba.github.io/portfolio_guntankoba/)
 
+## Todo
+- レスポンス対応(端末ごとの挙動)
+- CSSアニメーション追加
+- 各種リンク
+- スクロール位置によるヘッダーの変化
+- 
 ## Architeqture
 - Vue.js + typescript
 
